@@ -30,7 +30,7 @@ def makeMovie(xList, solList,tList,title,xlab,ylab):
 		FFMpegWriter = manimation.writers['ffmpeg']
 		metadata = dict(title=title, artist='Matplotlib',
 		                comment='Movie support!')
-		writer = FFMpegWriter(fps=1, metadata=metadata)
+		writer = FFMpegWriter(fps=60, metadata=metadata)
 
 		fig = plt.figure()
 		l, = plt.plot([], [], 'k-o')
@@ -56,7 +56,7 @@ def makeMovieMax(xList,yList,tList, solList,title,xlab,ylab):
 		FFMpegWriter = manimation.writers['ffmpeg']
 		metadata = dict(title=title, artist='Matplotlib',
 		                comment='Movie support!')
-		writer = FFMpegWriter(fps=1, metadata=metadata)
+		writer = FFMpegWriter(fps=60, metadata=metadata)
 
 		fig = plt.figure()
 		l, = plt.plot([], [], 'k-o')
